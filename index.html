@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bellezza Privé · Centro de estética avanzada · Blanes</title>
+<meta name="description" content="Bellezza Privé, centro de estética avanzada en Blanes: depilación láser SHR prácticamente indolora, tratamientos faciales y corporales, presoterapia, diatermia y manicura. 4,8 ★ con 112 reseñas.">
+<link rel="icon" href="assets/ig/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Schibsted+Grotesk:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="is-locked">
+
+<!-- INVITACIÓN: sobre lacrado -->
+<div class="invite" id="invite">
+  <p class="invite__top">Blanes · Carrer d'Anselm Clavé, 63</p>
+  <div class="env" id="env">
+    <div class="env__back"></div>
+    <div class="env__card" id="envCard">
+      <p class="env__small">Invitación privada</p>
+      <p class="env__name">Bellezza<br>Privé</p>
+      <p class="env__small">Admite una persona: tú</p>
+    </div>
+    <div class="env__pocket"></div>
+    <div class="env__flap" id="envFlap"></div>
+    <button class="env__seal" id="seal" aria-label="Romper el sello y entrar">
+      <span class="env__half env__half--l">B</span><span class="env__half env__half--r">B</span>
+    </button>
+  </div>
+  <p class="invite__hint">Rompe el sello para entrar</p>
+  <button class="invite__skip" id="skip">Entrar sin abrir</button>
+</div>
+
+<header class="nav">
+  <a class="nav__logo" href="#top" aria-label="Bellezza Privé"><span>B</span> Bellezza Privé</a>
+  <nav class="nav__links">
+    <a href="#salas">Las salas</a>
+    <a href="#privilegios">Privilegios</a>
+    <a href="#socia">Tu tarjeta</a>
+    <a href="#visita">Visita</a>
+  </nav>
+  <a class="nav__cta" href="https://wa.me/34635580387?text=Hola%20Bellezza%20Priv%C3%A9%2C%20quiero%20reservar%20una%20cita" target="_blank" rel="noopener">Reservar</a>
+</header>
+
+<main id="top">
+<!-- HERO -->
+<section class="hero">
+  <div class="hero__media"><img src="assets/web/w11.jpeg" alt="Tratamiento facial en cabina con aparatología avanzada"></div>
+  <div class="hero__copy">
+    <p class="kicker">Centro de estética avanzada · Blanes</p>
+    <h1 class="hero__title"><span>Bienvenida</span><span>al club</span></h1>
+    <p class="hero__lead">Láser SHR prácticamente indoloro, rostro y cuerpo con tecnología de cabina. Aquí cada visita es una reserva a tu nombre.</p>
+    <div class="hero__actions">
+      <a class="btn btn--foil" href="#salas">Recorrer las salas</a>
+      <a class="btn btn--line" href="tel:+34635580387">635 580 387</a>
+    </div>
+  </div>
+  <div class="hero__badge"><strong>4,8</strong><span>★ · 112 reseñas en Google</span></div>
+</section>
+
+<!-- MARQUESINA -->
+<div class="ribbon" aria-hidden="true"><div class="ribbon__track"><span>Solo socias</span><i>✦</i><span>Láser SHR</span><i>✦</i><span>Diatermia</span><i>✦</i><span>Hidralift</span><i>✦</i><span>Dermapen</span><i>✦</i><span>Presoterapia</span><i>✦</i><span>Fotorejuvenecimiento</span><i>✦</i><span>Solo socias</span><i>✦</i><span>Láser SHR</span><i>✦</i><span>Diatermia</span><i>✦</i><span>Hidralift</span><i>✦</i><span>Dermapen</span><i>✦</i><span>Presoterapia</span><i>✦</i><span>Fotorejuvenecimiento</span><i>✦</i></div></div>
+
+<!-- SALAS -->
+<section class="rooms" id="salas">
+  <header class="head">
+    <p class="kicker">Las salas del club</p>
+    <h2>Cuatro puertas.<br><em>Elige cuál abrir.</em></h2>
+  </header>
+  <div class="doors">
+    <button class="door" data-room="laser">
+      <span class="door__inside"><img src="assets/ig/p09.jpg" alt=""></span>
+      <span class="door__leaf"><span class="door__plate">Nº 01</span><span class="door__name">Láser</span><span class="door__knob"></span></span>
+    </button>
+    <button class="door" data-room="rostro">
+      <span class="door__inside"><img src="assets/web/w12.jpeg" alt=""></span>
+      <span class="door__leaf"><span class="door__plate">Nº 02</span><span class="door__name">Rostro</span><span class="door__knob"></span></span>
+    </button>
+    <button class="door" data-room="cuerpo">
+      <span class="door__inside"><img src="assets/ig/p03.jpg" alt=""></span>
+      <span class="door__leaf"><span class="door__plate">Nº 03</span><span class="door__name">Cuerpo</span><span class="door__knob"></span></span>
+    </button>
+    <button class="door" data-room="manos">
+      <span class="door__inside"><img src="assets/web/w17.jpeg" alt=""></span>
+      <span class="door__leaf"><span class="door__plate">Nº 04</span><span class="door__name">Manos</span><span class="door__knob"></span></span>
+    </button>
+  </div>
+</section>
+
+<!-- SALA ABIERTA (modal) -->
+<div class="room" id="room" role="dialog" aria-modal="true" aria-labelledby="roomTitle" hidden>
+  <div class="room__media"><img id="roomImg" src="" alt=""></div>
+  <div class="room__body">
+    <button class="room__close" id="roomClose" aria-label="Salir de la sala">Salir ✕</button>
+    <p class="kicker" id="roomNum"></p>
+    <h3 id="roomTitle"></h3>
+    <p class="room__lead" id="roomLead"></p>
+    <table class="menu" id="roomMenu"></table>
+    <p class="room__note">Tarifas orientativas publicadas por el centro. Confírmalas al reservar.</p>
+    <a class="btn btn--foil" id="roomCta" href="#" target="_blank" rel="noopener">Reservar en esta sala</a>
+  </div>
+</div>
+
+<!-- PRIVILEGIOS -->
+<section class="perks" id="privilegios">
+  <header class="head">
+    <p class="kicker">Privilegios de socia</p>
+    <h2>Lo que el club<br><em>reserva para ti</em></h2>
+  </header>
+  <div class="perks__grid">
+    <article class="perk"><p class="perk__big">8€</p><h3>Cualquier zona de láser</h3><p>Tu primera sesión de depilación láser SHR, en la zona que elijas.</p><span class="perk__tag">Nuevas clientas</span></article>
+    <article class="perk"><p class="perk__big">−30%</p><h3>Bonos de láser</h3><p>Bonos de 6 o 12 sesiones. Se pueden compartir… y regalar.</p><span class="perk__tag">Bonos</span></article>
+    <article class="perk"><p class="perk__big">−10%</p><h3>Alta cosmética en casa</h3><p>Descuento en todos los productos para seguir el tratamiento entre sesiones.</p><span class="perk__tag">Productos</span></article>
+  </div>
+</section>
+
+<!-- TARJETA DE SOCIA -->
+<section class="member" id="socia">
+  <div class="member__copy">
+    <p class="kicker">Tu tarjeta de socia</p>
+    <h2>Escribe tu nombre.<br><em>El club ya te espera.</em></h2>
+    <label class="member__field">
+      <span>Tu nombre</span>
+      <input id="memberName" type="text" maxlength="22" placeholder="Carla Ramírez" autocomplete="given-name">
+    </label>
+    <a class="btn btn--foil" id="memberCta" href="https://wa.me/34635580387" target="_blank" rel="noopener">Reservar como socia</a>
+  </div>
+  <div class="member__stage">
+    <div class="card" id="card">
+      <div class="card__foil"></div>
+      <div class="card__shine"></div>
+      <p class="card__logo">B</p>
+      <p class="card__brand">Bellezza Privé</p>
+      <p class="card__chip" aria-hidden="true"></p>
+      <p class="card__label">Socia</p>
+      <p class="card__name" id="cardName">Tu nombre aquí</p>
+      <p class="card__num">Nº 0113 · Blanes · desde <span id="cardYear"></span></p>
+    </div>
+  </div>
+</section>
+
+<!-- NOTAS DE SOCIAS -->
+<section class="notes">
+  <header class="head">
+    <p class="kicker">Lo que cuentan las socias</p>
+    <h2><em>4,8</em> sobre 5 en Google</h2>
+  </header>
+  <div class="notes__row">
+    <blockquote class="note"><p>«Es mi centro de estética de confianza. Siempre te reciben con una sonrisa, te hacen sentir súper cómoda y los tratamientos son una maravilla.»</p><cite>Carla R.</cite></blockquote>
+    <blockquote class="note"><p>«El centro es precioso y sus trabajadoras muy agradables y muy buenas profesionales. Te aconsejan lo que necesita tu piel.»</p><cite>Clienta en Google</cite></blockquote>
+    <blockquote class="note"><p>«Primera sesión de fotorrejuvenecimiento y he quedado encantada con el resultado.»</p><cite>Alejandra R.</cite></blockquote>
+    <blockquote class="note"><p>«Cogí un regalo para mi amiga: muy buena atención y flexibilidad horaria.»</p><cite>Reseña en Google</cite></blockquote>
+  </div>
+</section>
+
+<!-- VISITA -->
+<section class="visit" id="visita">
+  <div class="visit__info">
+    <p class="kicker">La dirección del club</p>
+    <h2>Carrer d'Anselm Clavé, 63<br><small>Local 2 · 17300 Blanes</small></h2>
+    <dl class="visit__hours">
+      <div><dt>Lunes a viernes</dt><dd>10:00 – 15:00 · 16:00 – 19:30</dd></div>
+      <div><dt>Sábado</dt><dd>10:00 – 14:30</dd></div>
+      <div><dt>Domingo</dt><dd>Cerrado</dd></div>
+    </dl>
+    <p class="visit__langs">Te atendemos en español, English, українська y русский.</p>
+    <div class="visit__actions">
+      <a class="btn btn--foil" href="https://wa.me/34635580387?text=Hola%20Bellezza%20Priv%C3%A9%2C%20quiero%20reservar%20una%20cita" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="btn btn--line" href="https://www.google.com/maps/search/?api=1&query=BellezzaPrive+Est%C3%A9tica+Blanes+Anselm+Clav%C3%A9+63" target="_blank" rel="noopener">Cómo llegar</a>
+      <a class="btn btn--line" href="https://www.instagram.com/__bellezzaprive_blanes/" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </div>
+  <div class="visit__img"><img src="assets/web/w16.jpeg" alt="Tratamiento facial relajante en cabina"></div>
+</section>
+</main>
+
+<footer class="foot">
+  <p class="foot__b">B</p>
+  <p>Bellezza Privé · Centro de estética avanzada · Blanes</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
